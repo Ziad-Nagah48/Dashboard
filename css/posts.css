@@ -1,0 +1,193 @@
+/* Your existing CSS */
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #001;
+  display: flex;
+  font-weight: bold;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile h2 {
+  font-size: 20px;
+}
+
+.img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  flex-shrink: 0;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.menu {
+  background-color: #123;
+  width: 60px;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.menu:hover {
+  width: 260px;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.5s;
+}
+
+ul li a:hover,
+.active,
+.data-info .box:hover,
+td:hover {
+  background-color: #ffffff55;
+}
+
+.log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.log-out a {
+  background-color: #a00;
+}
+
+ul li a i {
+  font-size: 30px;
+}
+
+.content {
+  width: 100%;
+  margin: 10px;
+}
+
+.titel-info {
+  background-color: #0481ff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.post {
+  background-color: #123;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a better appearance */
+}
+
+.post h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover; /* Make sure the image covers the container */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
+  border: 1px solid #fff; /* Add border to the image */
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background-color: #a00;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #700;
+}
+
+/* Additional CSS for form */
+#add-post-form {
+  background-color: #123;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#add-post-form input,
+#add-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+#add-post-form textarea {
+  min-height: 100px; /* Set a minimum height for textarea */
+}
+
+#add-post-form button {
+  padding: 10px 20px;
+  background-color: #0481ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-post-form button:hover {
+  background-color: #006ad1;
+}

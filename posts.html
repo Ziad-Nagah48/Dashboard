@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/posts.css" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li class="profile">
+          <div class="img-box">
+            <img src="user-200x300.webp" alt="profile" />
+          </div>
+          <h2>Yasser</h2>
+        </li>
+        <li>
+          <a href="index.html"
+            ><i class="fa-solid fa-house"></i>
+            <p>Dashboard</p></a
+          >
+        </li>
+        <li>
+          <a href="client.html"
+            ><i class="fa-solid fa-users"></i>
+            <p>clients</p></a
+          >
+        </li>
+        <li>
+          <a href="product.html"
+            ><i class="fa-solid fa-table-list"></i>
+            <p>products</p></a
+          >
+        </li>
+        <li>
+          <a href="chart.html"
+            ><i class="fa-solid fa-chart-pie"></i>
+            <p>charts</p></a
+          >
+        </li>
+        <li>
+          <a href="posts.html" class="active"
+            ><i class="fa-solid fa-pen"></i>
+            <p>posts</p></a
+          >
+        </li>
+        <li>
+          <a href="favorit.html"
+            ><i class="fa-solid fa-star"></i>
+            <p>favorite</p></a
+          >
+        </li>
+        <li>
+          <a href="setting.html"
+            ><i class="fa-solid fa-gear"></i>
+            <p>settings</p></a
+          >
+        </li>
+        <li class="log-out">
+          <a href="#"
+            ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p>Log Out</p></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="titel-info">
+        <p>Posts</p>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+      <div class="posts">
+        <!-- Existing posts -->
+        <div class="post">
+          <h3>Post Title 1</h3>
+          <p class="post-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
+            ipsum felis. Mauris elementum, tortor eu bibendum sollicitudin, quam
+            sapien vestibulum velit, eget consequat ligula lectus ut libero.
+          </p>
+          <div class="post-actions">
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
+        <!-- End of existing posts -->
+      </div>
+
+      <!-- Form to add new post -->
+      <form id="add-post-form">
+        <input type="text" id="post-title" placeholder="Post Title" required />
+        <textarea
+          id="post-content"
+          placeholder="Post Content"
+          required
+        ></textarea>
+        <input type="file" id="post-image" accept="image/*" />
+        <button type="submit">Add Post</button>
+      </form>
+    </div>
+    <script src="JS/posts.js"></script>
+  </body>
+</html>
